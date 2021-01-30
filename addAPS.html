@@ -16,9 +16,9 @@
         <li><a href="addAPS.html">Appointment Management</a></li>
     </ul>
     </div>
-
+</hr>
     <!-- Appointment Creation -->
-        <div id="formStyle">
+        <div id="">
         <div id="AddAPSForm">
         <form>
             <fieldset>
@@ -26,49 +26,92 @@
                 <label for="date_time">Date Time Start</label>
                 <input type="datetime-local" name="date_time">
                 </br>
-                  <input type="radio" id="mai" name="APPTType" value="mani">
-                  <label for="mani">Mani</label><br>
-                  <input type="radio" id="pedi" name="APPTType" value="pedi">
-                  <label for="pedi">Pedi</label><br>
-                  <input type="radio" id="both" name="APPTType" value="both">
-                  <label for="both">Both</label>
-            </br>
                 <input type="submit" name="submit" value="Submit New Appointment">
             </fieldset>
         </form>
         </div>
-        
+   </hr>     
     <!--List of current appointments in the system-->
         <div id="currentAPS">
         <h2>Our Appointments:</h2>
         <form>
             <fieldset>
-                <label for="date_time">Date Time Start</label>
+                <label for="date_time" value="1/2/2021 05:05:05">Date Time Start</label>
                 <input type="datetime-local" name="date_time">
-                <label for="APS_Type">Appointment Type</label>
-                <input type="text" name="APS_Type">
-                <label for="APS_Avail">Appointment Customer</label>
-                <input type="text" name="APS_Avail">
-                </br>
-              <input type="checkbox" id="red" name="red" value="Red">
-              <label for="red">Red</label><br>
-              <input type="checkbox" id="org" name="org" value="Orange">
-              <label for="org">Orange</label><br>
-              <input type="checkbox" id="yel" name="yel" value="Yellow">
-              <label for="vel">Yellow</label>
-              <input type="checkbox" id="gre" name="gre" value="Green">
-              <label for="gre">Green</label>
-              <input type="checkbox" id="blu" name="blu" value="Blue">
-              <label for="blu">Blue</label>
-              <input type="checkbox" id="ind" name="ind" value="Indigo">
-              <label for="ind">Indigo</label>
-              <input type="checkbox" id="vio" name="vio" value="Violet">
-              <label for="vio">Violet</label>
-            </br>
-                <button name="edit">Edit</button>
-                <button name="delete">Delete</button>    
-            </fieldset>
+                <button name="AddCUS">Add Customer to Appointment</button>
+                <button name="delete">Delete Appointment</button>
+             </fieldset>
         </form>
+                </br>
+                <table>
+                    <tr>
+                      <th>Appointment Block</th>
+                      <th colspan="3">Treatment</th>
+                      <th colspan="7">Color</th>
+                        <th colspan="2">Buttons</th>
+                    </tr>
+                    <tr>
+                      <th><label for="date_time" value="1/2/2021 05:05:05">Date Time Start</label></th>
+                      <th><input type="radio" id="mai" name="APPTType" value="mani"><label for="mani">Mani</label></th>
+                      <th><input type="radio" id="pedi" name="APPTType" value="pedi"><label for="pedi">Pedi</label></th>
+                      <th><input type="radio" id="both" name="APPTType" value="both"><label for="both">Both</label></th>
+                      <th><input type="checkbox" id="red" name="red" value="Red"><label for="red">Red</label></th>
+                      <th><input type="checkbox" id="org" name="org" value="Orange"><label for="org">Orange</label></th>
+                      <th><input type="checkbox" id="yel" name="yel" value="Yellow"><label for="vel">Yellow</label></th>
+                      <th><input type="checkbox" id="gre" name="gre" value="Green"><label for="gre">Green</label></th>
+                      <th><input type="checkbox" id="blu" name="blu" value="Blue"><label for="blu">Blue</label></th>
+                      <th><input type="checkbox" id="ind" name="ind" value="Indigo"><label for="ind">Indigo</label></th>
+                      <th><input type="checkbox" id="vio" name="vio" value="Violet"><label for="vio">Violet</label></th>
+                        <th><button name="edit">Edit</button></th>
+                        <th><button name="delete">Delete</button></th>
+                    </tr>
+                                        <tr>
+                      <th><label for="date_time" value="1/2/2021 05:05:05">Date Time Start</label></th>
+                      <th><input type="radio" id="mai" name="APPTType" value="mani"><label for="mani">Mani</label></th>
+                      <th><input type="radio" id="pedi" name="APPTType" value="pedi"><label for="pedi">Pedi</label></th>
+                      <th><input type="radio" id="both" name="APPTType" value="both"><label for="both">Both</label></th>
+                      <th><input type="checkbox" id="red" name="red" value="Red"><label for="red">Red</label></th>
+                      <th><input type="checkbox" id="org" name="org" value="Orange"><label for="org">Orange</label></th>
+                      <th><input type="checkbox" id="yel" name="yel" value="Yellow"><label for="vel">Yellow</label></th>
+                      <th><input type="checkbox" id="gre" name="gre" value="Green"><label for="gre">Green</label></th>
+                      <th><input type="checkbox" id="blu" name="blu" value="Blue"><label for="blu">Blue</label></th>
+                      <th><input type="checkbox" id="ind" name="ind" value="Indigo"><label for="ind">Indigo</label></th>
+                      <th><input type="checkbox" id="vio" name="vio" value="Violet"><label for="vio">Violet</label></th>
+                        <th><button name="edit">Edit</button></th>
+                        <th><button name="delete">Delete</button></th>
+                    </tr>
+                                        <tr>
+                      <th><label for="date_time" value="1/2/2021 05:05:05">Date Time Start</label></th>
+                      <th><input type="radio" id="mai" name="APPTType" value="mani"><label for="mani">Mani</label></th>
+                      <th><input type="radio" id="pedi" name="APPTType" value="pedi"><label for="pedi">Pedi</label></th>
+                      <th><input type="radio" id="both" name="APPTType" value="both"><label for="both">Both</label></th>
+                      <th><input type="checkbox" id="red" name="red" value="Red"><label for="red">Red</label></th>
+                      <th><input type="checkbox" id="org" name="org" value="Orange"><label for="org">Orange</label></th>
+                      <th><input type="checkbox" id="yel" name="yel" value="Yellow"><label for="vel">Yellow</label></th>
+                      <th><input type="checkbox" id="gre" name="gre" value="Green"><label for="gre">Green</label></th>
+                      <th><input type="checkbox" id="blu" name="blu" value="Blue"><label for="blu">Blue</label></th>
+                      <th><input type="checkbox" id="ind" name="ind" value="Indigo"><label for="ind">Indigo</label></th>
+                      <th><input type="checkbox" id="vio" name="vio" value="Violet"><label for="vio">Violet</label></th>
+                        <th><button name="edit">Edit</button></th>
+                        <th><button name="delete">Delete</button></th>
+                    </tr>
+                                        <tr>
+                      <th><label for="date_time" value="1/2/2021 05:05:05">Date Time Start</label></th>
+                      <th><input type="radio" id="mai" name="APPTType" value="mani"><label for="mani">Mani</label></th>
+                      <th><input type="radio" id="pedi" name="APPTType" value="pedi"><label for="pedi">Pedi</label></th>
+                      <th><input type="radio" id="both" name="APPTType" value="both"><label for="both">Both</label></th>
+                      <th><input type="checkbox" id="red" name="red" value="Red"><label for="red">Red</label></th>
+                      <th><input type="checkbox" id="org" name="org" value="Orange"><label for="org">Orange</label></th>
+                      <th><input type="checkbox" id="yel" name="yel" value="Yellow"><label for="vel">Yellow</label></th>
+                      <th><input type="checkbox" id="gre" name="gre" value="Green"><label for="gre">Green</label></th>
+                      <th><input type="checkbox" id="blu" name="blu" value="Blue"><label for="blu">Blue</label></th>
+                      <th><input type="checkbox" id="ind" name="ind" value="Indigo"><label for="ind">Indigo</label></th>
+                      <th><input type="checkbox" id="vio" name="vio" value="Violet"><label for="vio">Violet</label></th>
+                        <th><button name="edit">Edit</button></th>
+                        <th><button name="delete">Delete</button></th>
+                    </tr>
+               </table
+            </br>  
         </div>
         </div>
     </div>
