@@ -31,15 +31,30 @@
    </hr>     
     <!--Search current apps and add in the customers and colors-->
         <div id="currentAPS">
-        <h2>Our Appointments:</h2>
-        <form>
-            <fieldset>
-                <label for="date_time">Date Time Start</label><input type="datetime-local" name="date_time">
-                <button name="AddCUS">Add Customer to Appointment</button>
-             </fieldset>
-        </form>
+     <p>This table will be returned from the Database</p>
+        <h2>Our Appointment Times:</h2>
+         <table>
+           <tr colspan="2"><th><button name="Get">Refresh Table</button></th></tr>
+           <tr>
+              <th>Appointment Block</th>
+              <th>Button</th>
+             </tr>
+             <tr>
+                 <th>2021-12-20 08:30:45</th>
+                 <th><button name="AddCUS">Add Customer to Appointment</button></th>
+             </tr>
+            <tr>
+                 <th>2021-12-20 09:30:45</th>
+                 <th><button name="AddCUS">Add Customer to Appointment</button></th>
+             </tr>
+             <tr>
+                 <th>2021-12-20 10:30:45</th>
+                 <th><button name="AddCUS">Add Customer to Appointment</button></th>
+             </tr>
+            </table>
                 </br>
         <!-- Appointment Editing-->
+    <h2>Our Reservations:</h2>
 <p>This table will be returned from the Database</p>
                 <table>
                     <tr colspan="12"><th><button name="Get">Refresh Table</button></th></tr>
