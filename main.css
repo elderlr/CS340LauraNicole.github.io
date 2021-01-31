@@ -1,12 +1,8 @@
-/* Color theme */
-/* Dark Grey: #43464B
-Mid Gray: #87898c
-light gray: #b2b4b5 */
+
 
 body {
-    background-color: #c1c3c4;
-    color: #43464B;
-}
+    background-image: url('rainbowpolish.jpg');
+    }
 
 #NavigationUL {
     background-color: #b2b4b5;
