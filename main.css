@@ -1,16 +1,17 @@
 
 h1{
 color: blue;
-  font-family: verdana;
-  font-size: 300%;
+  font-family: lucida;
+  font-size:500%;
   text-align: center;
 }
 body {
     color: white;
+    background-image: url('rainbowpolish.jpg');
     }
 
 #NavigationUL {
-    --background-image: url('rainbowpolish.jpg');
+    
     position: absolute;
     top: 0;
     left: 0;
