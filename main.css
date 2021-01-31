@@ -8,6 +8,7 @@ color: purple;
 body {
     color: white;
     background-image: url('rainbowpolish.jpg');
+    background-repeat: no-repeat;
     }
 
 .center {
@@ -29,7 +30,12 @@ body {
     border-top: 3px solid black;
     border-right: 3px solid black;
 }
- li{
+
+ul{
+  list-style-type: none;
+}
+
+ul li{
    color: black;
    font-style: bold;
 }
