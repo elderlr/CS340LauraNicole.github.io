@@ -21,7 +21,7 @@ body {
 #NavigationUL {
     
     position: absolute;
-    top: 0;
+    top: 100;
     left: 0;
     background-color: #b2b4b5;
     width: 20%;
