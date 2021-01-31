@@ -1,7 +1,7 @@
 
 h1{
 color: purple;
-  font-family: cursive, "Times New Roman";
+  font-family: serif, "Times New Roman";
   font-size:800%;
   text-align: center;
 }
@@ -17,7 +17,7 @@ p{
 }
 
 body {
-    color: light pink;
+    color: pink;
     width: 80%;
     right: 0;
     
