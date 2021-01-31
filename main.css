@@ -1,7 +1,7 @@
 
 h1{
 color: purple;
-  font-family: serif, "Times New Roman";
+  font-family: cursive, "Comic Sans";
   font-size:800%;
   text-align: center;
 }
@@ -17,7 +17,7 @@ p{
 }
 
 body {
-    background-color: red;
+    background-color: pink;
     width: 80%;
     right: 0;
     
@@ -28,7 +28,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: light gray;
+    background-color: #F8F9F9;
     width: 10%;
     height: 100%;
     border-top: 3px solid black;
