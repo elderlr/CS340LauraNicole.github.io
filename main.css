@@ -5,6 +5,9 @@ body {
     }
 
 #NavigationUL {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #b2b4b5;
     width: 20%;
     height: 100%;
