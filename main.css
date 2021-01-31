@@ -6,11 +6,11 @@ color: blue;
   text-align: center;
 }
 body {
-    
+    color: white;
     }
 
 #NavigationUL {
-    background-image: url('rainbowpolish.jpg');
+    --background-image: url('rainbowpolish.jpg');
     position: absolute;
     top: 0;
     left: 0;
