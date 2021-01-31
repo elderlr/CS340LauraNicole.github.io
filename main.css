@@ -1,7 +1,7 @@
 
 h1{
 color: purple;
-  font-family: cursive, "Comic Sans";
+  font-family: cursive, "Lucida Calligraphy";
   font-size:800%;
   text-align: center;
 }
@@ -17,7 +17,7 @@ p{
 }
 
 body {
-    background-color: white;
+    background-color: #FEDDF7;
     width: 80%;
     right: 0;
     
@@ -54,6 +54,6 @@ label {
 
 .row {
   display: absolute;
-  margin-left: 500;
+  align: right;
 }
 
