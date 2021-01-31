@@ -52,8 +52,6 @@ label {
 }
 
 
-.row {
-  display: absolute;
-  overflow: hidden;
+#pic {
+  align: center;
 }
-
