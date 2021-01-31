@@ -1,7 +1,7 @@
 
 h1{
 color: purple;
-  font-family: cursive, "Lucida Calligraphy";
+  font-family: cursive, "Lucida";
   font-size:800%;
   text-align: center;
 }
@@ -17,7 +17,7 @@ p{
 }
 
 body {
-    background-color: #FEDDF7;
+    background-color: #F5EEF8;
     width: 80%;
     right: 0;
     
