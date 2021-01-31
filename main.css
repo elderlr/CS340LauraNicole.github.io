@@ -51,10 +51,9 @@ label {
   color: black;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc)
-*/
+
 .row {
   display: absolute;
-  --margin-left: 50;
+  margin-left: 500;
 }
 
