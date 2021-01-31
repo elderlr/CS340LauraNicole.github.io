@@ -1,13 +1,13 @@
 
 h1{
 color: purple;
-  font-family: cursive, "Brush Script MT";
+  font-family: cursive, "Times New Roman";
   font-size:800%;
   text-align: center;
 }
 
 h2{
-  color: #3399FF;
+  color: blue;
   font-family: serif, "Times New Roman";
   font-style: bold;
 }
@@ -17,7 +17,7 @@ p{
 }
 
 body {
-    color: #FAE7F7;
+    color: light pink;
     width: 80%;
     right: 0;
     
@@ -36,7 +36,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #CAC8C9;
+    background-color: light gray;
     width: 10%;
     height: 100%;
     border-top: 3px solid black;
