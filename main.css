@@ -1,8 +1,8 @@
 
 h1{
 color: purple;
-  font-family: cursive, "Lucida handwriting";
-  font-size:500%;
+  font-family: cursive, "Snell Roundhand";
+  font-size:800%;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ p{
 body {
     color: FAE7F7;
     width: 80%;
-    align: right;
+    right: 0;
     
     }
 
