@@ -29,13 +29,11 @@ body {
     height: 100%;
     border-top: 3px solid black;
     border-right: 3px solid black;
+    list-style-type: none;
 }
 
-ul{
-  list-style-type: none;
-}
 
-ul li{
+#NavigationUL li{
    color: black;
    font-style: bold;
 }
