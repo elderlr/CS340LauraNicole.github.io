@@ -5,6 +5,17 @@ color: purple;
   font-size:500%;
   text-align: center;
 }
+
+h2{
+  color: blue;
+  font-family: serif, "Times New Roman";
+  font-style: bold;
+}
+
+p{
+  color: black;
+}
+
 body {
     color: white;
     
