@@ -20,10 +20,10 @@ body {
 
 #NavigationUL {
     
-    position: relative;
+    position: fixed;
     top: 100;
     left: 0;
-    background-color: yellow;
+    background-color: #c0c0c0;
     width: 20%;
     height: 100%;
     border-top: 3px solid black;
