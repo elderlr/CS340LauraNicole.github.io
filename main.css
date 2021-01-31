@@ -28,7 +28,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #F8F9F9;
+    background-color: #D5DBDB;
     width: 10%;
     height: 100%;
     border-top: 3px solid black;
@@ -54,6 +54,6 @@ label {
 
 .row {
   display: absolute;
-  align: right;
+  overflow: hidden;
 }
 
