@@ -7,7 +7,7 @@ color: purple;
 }
 
 h2{
-  color: 3399FF;
+  color: #3399FF;
   font-family: serif, "Times New Roman";
   font-style: bold;
 }
@@ -17,7 +17,7 @@ p{
 }
 
 body {
-    color: FAE7F7;
+    color: #FAE7F7;
     width: 80%;
     right: 0;
     
@@ -36,7 +36,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: CAC8C9;
+    background-color: #CAC8C9;
     width: 10%;
     height: 100%;
     border-top: 3px solid black;
