@@ -7,7 +7,7 @@ color: purple;
 }
 
 h2{
-  color: blue;
+  color: 3399FF;
   font-family: serif, "Times New Roman";
   font-style: bold;
 }
@@ -18,6 +18,8 @@ p{
 
 body {
     color: white;
+    width: 80%;
+    align: right;
     
     }
 
@@ -65,5 +67,5 @@ Got this from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*
 
 .column {
   flex: 25%;
-  padding: 5px;
+  padding: 15px;
 }
