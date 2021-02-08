@@ -10,15 +10,13 @@
  </form>
 <br/>
 
-<h3>Search Customer:</h3>
-<form id="searchcust" action="/customer" method="get">
-    First Name: <input type="text" name="CusFirst"><br>
-    Last Name: <input type="text" name="CusLast">
-          
-    <input type="submit" value="Search">
- </form>
+<form id='search' action='' method=''>
+<!--- this form does not submit directly, the button handles all the interaction with backend -->
+    <label> Search customers by first name starting with:</label>
+    <input id='first_name_search_string' type='text' name='first_name_search_string' value=''>
+    <input type="button" value="Search" onclick="searchCusByFirstName()">
+</form>
 <br/>
-
 
 <h3>Our Customers:</h3>
 <table>

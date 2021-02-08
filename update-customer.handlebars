@@ -1,0 +1,14 @@
+<html>
+<h3>Update {{customers.CusFirst}} {{customers.CusLast}}:</h3>
+<form id="update-customer" action="/customer" method="post">
+    First name: <input type="text" name="CusFirst" value="{{customers.CusFirst}}"><br>
+    Last name: <input type="text" name="CusLast" value="{{customers.CusLast}}"><br>
+    Phone: <input type="text" name="PhoneNum" value="{{customers.PhoneNum}}"><br>
+</form>
+<button onclick="updateCustomer({{customers.CustomerID}})">Update</button>
+
+<h3>Add a Phone to {{customers.CusFirst}} {{customers.CusLast}}</h3>
+<form id="addphone" action="/customer" method="post">
+        PhoneNum: <input type='text' name="PhoneNum" value="{{customers.PhoneNum}}"><br>
+</form>
+<button onclick="addPhone({{customers.CustomerID}})">AddPhone</button>
