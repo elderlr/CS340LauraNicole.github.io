@@ -4,7 +4,7 @@ function updateCustomer(id){
         type: 'PUT',
         data: $('#update-customer').serialize(),
         success: function(result){
-            window.location.replace("./");
+            window.location.replace("/customer");
         }
     })
 };

@@ -39,7 +39,7 @@ module.exports = function(){
                   res.write(JSON.stringify(error));
                   res.end();
               }
-              context.customers = results;
+              context.customer = results;
               complete();
           });
       }
@@ -135,7 +135,7 @@ module.exports = function(){
         console.log(req.body)
         var mysql = req.app.get('mysql');
         var sql = "INSERT INTO Contacts (CustomerID, PhoneNum) VALUES (?, ?)";
-        var inserts = [req.body.CustomerID, req.body.PhoneNum];
+        var inserts = [req.params.id, req.body.PhoneNum];
         
         sql = mysql.pool.query(sql,inserts,function(error, results, fields){
             if(error){
