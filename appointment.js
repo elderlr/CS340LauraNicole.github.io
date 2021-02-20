@@ -9,7 +9,7 @@ module.exports = function () {
                 res.write(JSON.stringify(error));
                 res.end();
             }
-            context.Appointments = results;
+            context.appointments = results;
             complete();
         });
     }
@@ -24,7 +24,7 @@ module.exports = function () {
                 res.write(JSON.stringify(error));
                 res.end();
             }
-            context.Appointments = results[0];
+            context.appointments = results;
             complete();
         });
     }
