@@ -1,5 +1,8 @@
 <html>
 <h3>Update {{customers.CusFirst}} {{customers.CusLast}}:</h3>
+<a href="/customer">Back to Customer Page</a>
+<br/>
+<br/>
 <form id="update-customer" action="/customer" method="post">
     First name: <input type="text" name="CusFirst" value="{{customers.CusFirst}}"><br>
     Last name: <input type="text" name="CusLast" value="{{customers.CusLast}}"><br>
