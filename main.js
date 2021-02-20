@@ -16,10 +16,11 @@ app.engine('handlebars', handlebars.engine);
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/static', express.static('public'));
 app.set('view engine', 'handlebars');
-app.set('port', 9004);
+app.set('port', 9994);
 app.set('mysql', mysql);
-
 app.use('/customer', require('./customer.js'));
+app.use('/update-customer', require('./updatecustomer.js'));
+app.use('/appointment', require('./appointment.js'));
 
 app.use('/', express.static('public'));
 
