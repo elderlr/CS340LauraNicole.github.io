@@ -8,56 +8,59 @@
   <input type="submit" value="Submit">
 </form>
 <br/>
-<br/>
+
 <h3>Open Appointment Times</h3>
 <table>
-<thead>
-<th>Appointment Block</th>
-<th>Button</th>
-</thead>
-{{#each appointments}}
+    <thead>
+        <th>Appointment Block</th>
+        <th>Button</th>
+    </thead>
+
 <tbody>
-<tr>
-<td>{{DateTime}}</td>
-<td><a href="/appointment/{{DateTime}}">Add Customer to Appointment</a></td>
-</tr>
-{{/each}}
+    {{#each appointments}}
+    <tr>
+        <td>{{DateTime}}</td>
+        <td><a href="/appointment/{{DateTime}}">Add Customer to Appointment</a></td>
+    </tr>
+        {{/each}}
 </tbody>
 </table>
 <br/>
 <br/>
+
 <h3>Our Reservations:</h3>
 <table>
-<thead>
-<th>Appointment Block</th>
-<th>Customer ID</th>
-<th>Treatment</th>
-<th>Red</th>
-<th>Orange</th>
-<th>Yellow</th>
-<th>Green</th>
-<th>Blue</th>
-<th>Indigo</th>
-<th>Violet</th>
-<th colspan = 2>Buttoms</th>
-</thead>
-{{#each appointments}}
+    <thead>
+        <th>Appointment Block</th>
+        <th>Customer ID</th>
+        <th>Treatment</th>
+        <th>Red</th>
+        <th>Orange</th>
+        <th>Yellow</th>
+        <th>Green</th>
+        <th>Blue</th>
+        <th>Indigo</th>
+        <th>Violet</th>
+        <th colspan = 2>Buttons</th>
+    </thead>
+    
 <tbody>
-<tr>
-<td>{{DateTime}}</td>
-<td>{{TreatmentID}}</td>
-<td>{{CustomerID}}</td>
-<td>{{Red}}</td>
-<td>{{Orange}}</td>
-<td>{{Yellow}}</td>
-<td>{{Green}}</td>
-<td>{{Blue}}</td>
-<td>{{Indigo}}</td>
-<td>{{Violet}}</td>
-<td><button onclick="deleteAppointment({{AppointmentID}})">Delete</button></td>
-<td><a href="/appointment/"{{AppointmentID}}">Edit</a></td>
-</tr>
-{{/each}}
+        {{#each appointments}}
+    <tr>
+        <td>{{DateTime}}</td>
+        <td>{{TreatmentID}}</td>
+        <td>{{CustomerID}}</td>
+        <td>{{Red}}</td>
+        <td>{{Orange}}</td>
+        <td>{{Yellow}}</td>
+        <td>{{Green}}</td>
+        <td>{{Blue}}</td>
+        <td>{{Indigo}}</td>
+        <td>{{Violet}}</td>
+        <td><button onclick="deleteAppointment({{AppointmentID}})">Delete</button></td>
+        <td><a href="/appointment/{{AppointmentID}}">Edit</a></td>
+    </tr>
+    {{/each}}
 </tbody>
 </table>
 </html>
