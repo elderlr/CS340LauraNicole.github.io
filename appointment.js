@@ -67,7 +67,7 @@ module.exports = function () {
 
         }
     });
-
+/*
     /* Adds a person to an appt */
 
     router.post('/', function (req, res) {
@@ -172,6 +172,6 @@ module.exports = function () {
             }
         })
     })
-
+*/
     return router;
 }();
