@@ -1,0 +1,38 @@
+<html>
+<h3>Edit our Reservations:</h3>
+<a href="/" calss="list">Home</a>
+<a href="/appointment" calss="list">Appointments Page</a>
+<br />
+<br />
+<table>
+    <thead>
+    <th>Appointment Block</th>
+    <th>Customer ID</th>
+    <th>Treatment</th>
+    <th>Red</th>
+    <th>Orange</th>
+    <th>Yellow</th>
+    <th>Green</th>
+    <th>Blue</th>
+    <th>Indigo</th>
+    <th>Violet</th>
+    <th>Button</th>
+    </thead>
+    {{#each appointments}}
+    <tbody>
+        <tr>
+            <td>{{DateTime}}</td>
+            <td>{{TreatmentID}}</td>
+            <td>{{CustomerID}}</td>
+            <td>{{Red}}</td>
+            <td>{{Orange}}</td>
+            <td>{{Yellow}}</td>
+            <td>{{Green}}</td>
+            <td>{{Blue}}</td>
+            <td>{{Indigo}}</td>
+            <td>{{Violet}}</td>
+            <td><a href="/appointment/" {{AppointmentID}} ">Edit</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
