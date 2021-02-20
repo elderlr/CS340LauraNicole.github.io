@@ -68,20 +68,6 @@ module.exports = function () {
         }
     });
 
-    /*Display all appointments for a simgle appointment block */
-    router.get('/search/:s', function (req, res) {
-        var callbackCount = 0;
-        var context = {};
-        context.jsscripts = ["searchAppointment.js"];
-        var mysql = req.app.get('mysql');
-        getCusWithNameLike(req, res, mysql, context, complete);
-        function complete() {
-            callbackCount++;
-            if (callbackCount >= 1) {
-                res.render('appointment', context);
-            }
-        }
-    });
     /* Adds a person to an appt */
 
     router.post('/', function (req, res) {
