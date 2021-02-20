@@ -16,12 +16,12 @@ app.engine('handlebars', handlebars.engine);
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/static', express.static('public'));
 app.set('view engine', 'handlebars');
-app.set('port', 9994);
+app.set('port', 9004);
 app.set('mysql', mysql);
-app.use('/customer', require('./customer.js'));
-app.use('/update-customer', require('./updatecustomer.js'));
-app.use('/appointment', require('./appointment.js'));
 
+app.use('/customer', require('./customer.js'));
+
+app.use('/appointment', require('./appointment.js'));
 app.use('/', express.static('public'));
 
 app.use(function(req,res){
@@ -36,5 +36,5 @@ app.use(function(err, req, res, next){
 });
 
 app.listen(app.get('port'), function(){
-  console.log('Express started on http://flip3.engr.oregonstate.edu:' + app.get('port') + '; press Ctrl-C to terminate.');
+  console.log('Express started on http://flip1.engr.oregonstate.edu:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
