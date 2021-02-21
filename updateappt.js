@@ -1,9 +1,9 @@
 // UpdateAppointment
-function updateAppointment(id) {
+function updateappt(id) {
     $.ajax({
         url: '/appointment/' + id,
         type: 'PUT',
-        data: $('#update-Appointment').serialize(),
+        data: $('#update-appt').serialize(),
         success: function (result) {
             window.location.replace("/appointment");
         }
