@@ -1,38 +1,44 @@
 <html>
-<h3>Add New Customer to Appointment:</h3>
-<a href="/" calss="list">Home</a>
-<a href="/appointment" calss="list">Appointments Page</a>
-<br/>
-<br/>
-    <table>
-        <thead>
-        <th>Appointment Block</th>
-        <th>Customer ID</th>
-        <th>Treatment</th>
-        <th>Red</th>
-        <th>Orange</th>
-        <th>Yellow</th>
-        <th>Green</th>
-        <th>Blue</th>
-        <th>Indigo</th>
-        <th>Violet</th>
-        <th>Button</th>
-        </thead>
-        {{#each appointments}}
-        <tbody>
-            <tr>
-                <td>{{DateTime}}</td>
-                <td>{{TreatmentID}}</td>
-                <td>{{CustomerID}}</td>
-                <td>{{Red}}</td>
-                <td>{{Orange}}</td>
-                <td>{{Yellow}}</td>
-                <td>{{Green}}</td>
-                <td>{{Blue}}</td>
-                <td>{{Indigo}}</td>
-                <td>{{Violet}}</td>
-                <td><a href="/appointment/" {{AppointmentID}} ">Edit</a></td>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
+<a href="/" class="list">Home</a>
+<a href="/customer" class="list">     Customer Management</a>
+<br>
+
+<h3>Update Appointment {{appointments.AppointmentID}}:</h3>
+<form id="update-appt" action="/appointment" method="post">
+    DateTime: <input type="text" name="DateTime" value="{{appointments.DateTime}}"><br>
+    Treatment ID*: <input type="number" name="TreatmentID" value="{{appointments.TreatmentID}}"><br>
+    Customer ID: <input type="number" name="CustomerID" value="{{appointments.CustomerID}}"><br>
+    Red: <input type="checkbox" name="Red" value="{{appointments.Red}}"><br>
+    Orange: <input type="checkbox" name="Orange" value="{{appointments.Orange}}"><br>
+    Yellow: <input type="checkbox" name="Yellow" value="{{appointments.Yellow}}"><br>
+    Green: <input type="checkbox" name="Green" value="{{appointments.Green}}"><br>
+    Blue: <input type="checkbox" name="Blue" value="{{appointments.Blue}}"><br>
+    Indigo: <input type="checkbox" name="Indigo" value="{{appointments.Indigo}}"><br>
+    Violet: <input type="checkbox" name="Violet" value="{{appointments.Violet}}"><br>
+</form>
+<button onclick="updateAppointment({{appointments.AppointmentID}})">Update</button>
+<br>
+<br>
+
+ <h3>Our Customers:</h3>
+<table>
+    <thead> 
+        <th>ID</th>
+        <th>First Name</th> 
+        <th>Last Name</th> 
+        <th>Phone Number</th>
+    </thead> 
+    <tbody>
+        {{#each customers}} 
+        <tr> 
+            <td>{{CustomerID}}</td>
+            <td>{{CusFirst}}</td> 
+            <td>{{CusLast}}</td> 
+            <td>{{PhoneNum}}</td> 
+         </tr> 
+        {{/each}} 
+    </tbody> 
+</table> 
+
+
+</html>

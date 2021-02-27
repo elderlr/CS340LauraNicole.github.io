@@ -1,8 +1,7 @@
-function updateAppointment(id){
+function deleteAppt(id){
     $.ajax({
         url: '/appointment/' + id,
-        type: 'PUT',
-        data: $('#update-appt').serialize(),
+        type: 'DELETE',
         success: function(result){
             window.location.replace("/appointment");
         }
