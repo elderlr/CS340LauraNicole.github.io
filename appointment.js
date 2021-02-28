@@ -1,9 +1,8 @@
-
 module.exports = function(){
 var express = require('express');
 var router = express.Router();
 
-    
+
     function getAppointmentBlock(res, mysql, context, complete){
         mysql.pool.query("SELECT AppointmentID, DateTime FROM Appointments WHERE CustomerID IS NULL", function(error, results, fields){
             if(error){
@@ -50,7 +49,6 @@ var router = express.Router();
             complete();
         });
     }
-
 router.get('/', function(req, res){
     var callbackCount = 0;
     var context = {};
@@ -86,20 +84,18 @@ router.get('/:id', function(req, res){
 
 //This is the post to create a blank appointment time
 router.post('/', function (req, res) {
-	console.log(req.body)
+        console.log(req.body)
     var mysql = req.app.get('mysql');
     var sql = "INSERT INTO Appointments (DateTime) VALUES (?)";
     var inserts = [req.body.DateTime];
     for(var i=0; i<10; i++){
     sql = mysql.pool.query(sql, inserts);}
-        
+
     res.redirect('/appointment');
 });
 
 
 /* The URI that update data is sent to in order to update a reservation*/
-
-
 router.put('/:id', function (req, res) {
     var mysql = req.app.get('mysql');
     console.log(req.body)
@@ -117,8 +113,8 @@ router.put('/:id', function (req, res) {
                 }
             });
     });
-  
-    
+
+
 /* Route to delete an appt */
 
 
@@ -142,3 +138,7 @@ router.delete('/:id', function (req, res) {
 
 return router;
 }();
+
+
+
+
