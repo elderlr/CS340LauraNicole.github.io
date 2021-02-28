@@ -1,13 +1,15 @@
 <html>
-<a href="/" class="list">Home</a>
-<a href="/appointment" class="list">     Appointment Management</a>
-<br>
+
 <h3>Add new Customer:</h3>
+<a href="/" class="list">Home</a>
+<br/>
+
+<br/>
 <form id="addcust" action="/customer" method="post">
     First Name: <input type="text" name="CusFirst"><br>
     Last Name: <input type="text" name="CusLast"><br>
-    Phone Number: <input type="text" name="PhoneNum"> 
-        
+    Phone Number: <input type="text" name="PhoneNum">
+
     <input type="submit" value="Submit">
  </form>
 <br/>
@@ -24,24 +26,24 @@
 
 <h3>Our Customers:</h3>
 <table>
-    <thead> 
+    <thead>
         <th>ID</th>
-        <th>First Name</th> 
-        <th>Last Name</th> 
+        <th>First Name</th>
+        <th>Last Name</th>
         <th>Phone Number</th>
-    </thead> 
+    </thead>
     <tbody>
-        {{#each customers}} 
-        <tr> 
+        {{#each customers}}
+        <tr>
             <td>{{CustomerID}}</td>
-            <td>{{CusFirst}}</td> 
-            <td>{{CusLast}}</td> 
-            <td>{{PhoneNum}}</td> 
-            
+            <td>{{CusFirst}}</td>
+            <td>{{CusLast}}</td>
+            <td>{{PhoneNum}}</td>
+
             <td><button onclick="deleteCustomer({{CustomerID}})">Delete</button></td>
             <td><a href="/customer/{{CustomerID}}">Update</a></td>
-        </tr> 
-        {{/each}} 
-    </tbody> 
-</table> 
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
 </html>
